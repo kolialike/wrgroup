@@ -1,0 +1,112 @@
+#header 
+	position: relative
+	.wrapper
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+	.header-top
+		border-bottom: 1px solid rgba(#fff, 0.1)
+		clear: both
+		display: block
+		width: 100%
+		margin-bottom: 20px
+		+pie-clearfix
+		p 
+			color: #ffffff
+			line-height: 20px
+			font-size: 16px
+			display: inline-block
+			margin: 10px 0px
+			padding: 10px 15px
+			border-right: 1px solid rgba(#fff, 0.1)
+		.phone
+			font-size: 15px
+			background: image-url("header-phone.png") left center no-repeat
+			padding-left: 40px
+			span
+				margin-left: 15px
+		.email
+			background: image-url("header-email.png") left center no-repeat
+			padding-left: 30px
+			margin-left: 25px
+		.schedule
+			border: none
+			background: image-url("heqder-work.png") left center no-repeat
+			padding-left: 30px
+			margin-left: 25px
+			text-transform: uppercase
+			strong
+				font-weight: 700
+	.language
+		float: right
+		a
+			color: #fff
+			font-size: 14px
+			line-height: 18px
+			text-decoration: none
+			margin: 20px 10px
+			display: inline-block
+			background: image-url("arrow-down.png") right center no-repeat
+			padding-right: 18px
+			img 
+				margin-right: 9px
+.logo 
+	+transition(0.2s)
+	&:hover
+		+opacity(0.5)
+.header-menu
+	float: right
+	margin-right: 8px
+	li 
+		float: left
+		margin-left: 40px
+		a 
+			font-size: 17px
+			line-height: 20px
+			color: #ffffff
+			text-decoration: none
+			text-transform: uppercase
+			+transition(0.2s)
+			&:hover
+				color: #7a7a7a
+.heade-img-container
+	position: relative
+	&:before
+		content: ""
+		height: 100%
+		width: 100%
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(#141a1e, 0.7)
+	&+img 
+		width: 100%
+		display: block
+
+// tabs
+.tabs
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	.tabs-item
+		text-align: center
+		text-decoration: none
+		width: 180px
+		float: left 
+		margin-left: 20px
+		padding: 0px 20px
+		+box-sizing(border-box)
+		&:first-child
+			margin-left: 0
+		p 
+			color: #ffffff
+			line-height: 20px
+			font-size: 16px
+			display: inline-block
