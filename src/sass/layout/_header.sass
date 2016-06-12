@@ -24,20 +24,29 @@
 			border-right: 1px solid rgba(#fff, 0.1)
 		.phone
 			font-size: 15px
-			background: image-url("header-phone.png") left center no-repeat
-			padding-left: 40px
+			padding-left: 20px
+			&:before
+				+font-icon("phone")
+				+opacity(0.5)
+				margin-right: 20px
 			span
 				margin-left: 15px
 		.email
-			background: image-url("header-email.png") left center no-repeat
-			padding-left: 30px
 			margin-left: 25px
+			&:before
+				+font-icon("email")
+				margin-right: 20px
+				font-size: 34px
+				+opacity(0.5)
+				vertical-align: middle
 		.schedule
 			border: none
-			background: image-url("heqder-work.png") left center no-repeat
 			padding-left: 30px
 			margin-left: 25px
 			text-transform: uppercase
+			&:before
+				+font-icon("innovation")
+				margin-right: 20px
 			strong
 				font-weight: 700
 	.language
@@ -46,11 +55,20 @@
 			color: #fff
 			font-size: 14px
 			line-height: 18px
+			position: relative
 			text-decoration: none
 			margin: 20px 10px
 			display: inline-block
-			background: image-url("arrow-down.png") right center no-repeat
+			// background: image-url("arrow-down.png") right center no-repeat
 			padding-right: 18px
+			&:after
+				position: absolute
+				right: 0
+				top: 2px
+				content: ""
+				display: block
+				+font-icon("arrow-down")
+
 			img 
 				margin-right: 9px
 .logo 
@@ -85,9 +103,10 @@
 		bottom: 0
 		left: 0
 		background: rgba(#141a1e, 0.7)
-	&+img 
+	&>img 
 		width: 100%
 		display: block
+		max-width: 100%
 
 // tabs
 .tabs
@@ -95,18 +114,100 @@
 	bottom: 0
 	left: 0
 	right: 0
+	font-size: 0
+	line-height: 0
+	display: flex
 	.tabs-item
 		text-align: center
 		text-decoration: none
 		width: 180px
-		float: left 
+		display: inline-block
 		margin-left: 20px
-		padding: 0px 20px
+		padding: 0px 15px
 		+box-sizing(border-box)
+		position: relative
+		margin-bottom: 2px
+		vertical-align: bottom
+		padding-bottom: 30px
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 2px
+			background: #fff
 		&:first-child
 			margin-left: 0
 		p 
 			color: #ffffff
 			line-height: 20px
 			font-size: 16px
+			display: table
+			margin-bottom: 2px
+			min-height: 40px
+			span 
+				display: table-cell
+				vertical-align: middle
+	.banner-img
+		color: #fff
+		display: block
+		margin-bottom: 40px
+		height: 70px
+		font-size: 0
+		line-height: 0
+		&:before 
 			display: inline-block
+			content: ""
+			vertical-align: bottom
+		&:after
+			content: ""
+			display: inline-block
+			height: 100%
+			width: 0
+			vertical-align: bottom
+	.car
+		&:before 
+			+font-icon("car")
+			font-size: 121px
+			line-height: 61px
+	.list
+		&:before 
+			+font-icon("list")
+			font-size: 124px
+			line-height: 65px
+	.globe
+		&:before 
+			+font-icon("globe")
+			font-size: 122px
+			line-height: 62px
+	.loader
+		&:before 
+			+font-icon("loader")
+			font-size: 123px
+			line-height: 63px
+	.mathematical-signs
+		&:before 
+			+font-icon("mathematical-signs")
+			font-size: 125px
+			line-height: 64px
+	.lawyer-consulting
+		&:before 
+			+font-icon("lawyer-consulting")
+			font-size: 126px
+			line-height: 66px
+.active
+	.tabs-item
+		&:before
+			background: #f3d719
+		p 
+			color: #f3d719
+	.banner-img
+		color: #f3d719
+
+
+
+
+
+

@@ -1,1 +1,1 @@
-jQuery(function(e){e(".flexslider").flexslider({animation:"slide"})});
+jQuery(function(e){var n=e("#company-services-select");n.on("change",function(){console.log(event);n.target("option").tagName.val();e('"company-services-select-"+optVal').addClass("open").siblings().removeClass("open")})});

@@ -1,0 +1,40 @@
+.information
+	background: #f3d719
+	+pie-clearfix
+	padding: 20px 0
+	.information-item
+		width: 280px
+		float: left 
+		margin-left: 20px
+		text-align: center
+		&:first-child
+			margin-left: 0
+		h4
+			color: #393939
+			font-size: 22px
+			line-height: 25px
+			display: inline-block
+			font-family: 'PT Sans', sans-serif
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 15px
+		p 
+			display: inline-block
+			font-size: 18px
+			line-height: 20px
+			color: #535353
+		.information-icon
+			font-size: 80px
+			display: block
+			color: #393939
+		.icon-ship
+			&:before
+				+font-icon("ship")
+		.icon-car1
+			&:before
+				+font-icon("car1")
+		.icon-aircraft
+			&:before
+				+font-icon("aircraft")
+
+
