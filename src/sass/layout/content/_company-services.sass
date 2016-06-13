@@ -1,6 +1,7 @@
 .company-services
 	padding: 70px 00px
 	+pie-clearfix
+	background: #fdfdfd
 	.company-services-container
 		width: 580px
 		float: left
@@ -11,13 +12,84 @@
 			font-size: 40px
 			line-height: 44px
 			text-transform: uppercase
-		h4
+		&>h4
 			text-transform: uppercase
 			font-size: 27px
 			line-height: 30px
 			display: block
 			color: #444444
 			margin: 20px 0 30px
+		form 
+			input
+				width: 100%
+				background: #f3f3f3
+				border: none
+				+border-radius(4px)
+				padding: 15px 13px
+				outline: none
+				margin-bottom: 20px
+				font-size: 18px
+				line-height: 20px
+				+box-sizing(border-box)
+				+appearance(none)
+				+placeholder
+					color: #393939
+					+opacity(0.75)
+					+box-sizing(border-box)
+			input[type="submit"]
+				text-transform: uppercase
+				width: 280px
+				float: right 
+				background: linear-gradient (to top, #efca11 #f7e421)
+				+box-shadow(0px 3px 0px 0px rgba(#ddba06,1))
+				padding: 15px 13px 12px
+				color: #3c3c3c
+				+opacity(0.9)
+				font-weight: 700
+				margin-top: 28px
+				cursor: pointer
+				+transition(0.2s)
+				&:hover
+					background: linear-gradient (to top, #877b42 #e4d37e)
+			.company-services-container-select				
+				position: relative
+				display: block
+				background: #f3f3f3
+				clear: both
+				&:before
+					content: ""
+					display: block
+					background: #f3f3f3
+					+font-icon("arrow-down")
+					position: absolute
+					right: 7px
+					top: 19px
+					width: 20px
+					pointer-events: none 
+			select 
+				background: transparent
+				width: 580px
+				outline: none
+				color: #393939
+				+border-radius(4px)
+				border: none
+				font-size: 18px
+				line-height: 20px
+				padding: 15px 13px
+				&>option
+					background: #f3f3f3
+					padding: 10px 0
+					margin: 1px 0px
+			&>.company-services-container-input
+				&:nth-child(2n)
+					margin-right: 20px
+					margin-left: 0 !important
+			.company-services-container-input
+				+pie-clearfix
+				width: 280px
+				float: left 
+				&:nth-child(2n)
+					margin-left: 20px
 	.company-services-contact
 		width: 580px
 		float: right
@@ -59,3 +131,53 @@
 				margin-right: 20px
 		.company-services-truck
 			margin-top: 100px
+.comp
+	display: none
+	h4
+		color: #393939 		
+		font-size: 22px
+		line-height: 25px
+		text-transform: initial
+		margin-top: 31px
+		margin-bottom: 50px
+		padding-top: 38px
+		border-top: 1px solid #eaeaea
+	.car
+		&:before 
+			+font-icon("car")
+			margin-right: 15px
+			font-size: 80px
+			vertical-align: middle
+	.list 
+		&:before 
+			+font-icon("list")
+			margin-right: 15px
+			font-size: 45px
+			vertical-align: middle
+	.globe
+		&:before 
+			+font-icon("globe")
+			margin-right: 15px
+			font-size: 80px
+			vertical-align: middle
+	.loader
+		&:before 
+			+font-icon("loader")
+			margin-right: 15px
+			font-size: 80px
+			vertical-align: middle
+	.mathematical-signs
+		&:before 
+			+font-icon("mathematical-signs")
+			margin-right: 15px
+			font-size: 80px
+			vertical-align: middle
+	.lawyer-consulting
+		&:before 
+			+font-icon("lawyer-consulting")
+			margin-right: 15px
+			font-size: 80px
+			vertical-align: middle
+
+.open
+	display: block
