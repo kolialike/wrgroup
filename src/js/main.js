@@ -17,7 +17,7 @@ jQuery(function($){
 
 	// language
 	var languageRu = $(".language-ru");
-	var language = $(".language")
+	var language = $(".language");
 	languageRu.on('click', function(event) {
 		if (event.target.className == "language-ru") {
 	      language.toggleClass('language-open');
