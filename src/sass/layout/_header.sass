@@ -82,14 +82,20 @@
 			position: absolute
 			top: -200px
 			right: 0
+			background: #fff
+			padding: 6px 0px 0px 10px
 			a 
 				display: block
-				margin: 1px 0 5px
+				margin: 1px 0 13px
 				padding-right: 5px
+				color: #545454
+				+transition(0.2s)
+				&:hover
+					color: #000
 		&.language-open
 			.language-content
 				+opacity(1)
-				top: 40px
+				top: 64px
 			.language-ru
 				&:after
 					transform: rotate(180deg)
